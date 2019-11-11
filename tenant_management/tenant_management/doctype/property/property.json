@@ -1,0 +1,130 @@
+{
+ "autoname": "field:property_name",
+ "creation": "2019-11-07 12:31:28.580397",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "property_name",
+  "property_location",
+  "property_type",
+  "property_status",
+  "rent",
+  "column_break_1",
+  "property_owner",
+  "property_agent",
+  "column_description",
+  "property_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Property Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "property_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Property Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Property Type",
+   "options": "Single Room\nSelf Contained\n1 - Bedroom Flat\n2 - Bedroom Flat\n3 - Bedroom Flat\nDuplex",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property_owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Property Owner",
+   "options": "Owner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property_agent",
+   "fieldtype": "Link",
+   "label": "Property Agent",
+   "options": "Agent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rent",
+   "fieldtype": "Currency",
+   "label": "Rent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property_status",
+   "fieldtype": "Select",
+   "label": "Property Status",
+   "options": "Available\nRented",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property_description",
+   "fieldtype": "Text",
+   "label": "Property Description"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_description",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "modified": "2019-11-11 18:29:44.553671",
+ "modified_by": "Administrator",
+ "module": "Tenant Management",
+ "name": "Property",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Estate Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tenant",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "title_field": "property_name",
+ "track_changes": 1
+}

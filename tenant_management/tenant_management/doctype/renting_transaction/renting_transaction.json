@@ -1,0 +1,126 @@
+{
+ "autoname": "Transaction.####",
+ "creation": "2019-11-07 12:53:13.600022",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transaction_type",
+  "transaction_date",
+  "property",
+  "property_name",
+  "owner",
+  "prospective_tenant",
+  "tenant_name",
+  "rent_paid"
+ ],
+ "fields": [
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Transaction Type",
+   "options": "New Rent\nRent Renewal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Property",
+   "options": "Property",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "property.property_name",
+   "fieldname": "property_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Property Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prospective_tenant",
+   "fieldtype": "Link",
+   "label": "Prospective Tenant",
+   "options": "Prospective Tenant",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "prospective_tenant.tenant_name",
+   "fieldname": "tenant_name",
+   "fieldtype": "Read Only",
+   "label": "Tenant Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rent_paid",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount Paid",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "property.property_owner",
+   "fieldname": "owner",
+   "fieldtype": "Read Only",
+   "label": "Owner",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-11-10 00:14:36.562937",
+ "modified_by": "Administrator",
+ "module": "Tenant Management",
+ "name": "Renting Transaction",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Estate Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tenant",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
