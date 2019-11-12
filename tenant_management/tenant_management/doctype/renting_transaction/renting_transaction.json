@@ -10,8 +10,9 @@
   "property",
   "property_name",
   "owner",
-  "prospective_tenant",
-  "tenant_name",
+  "tenant",
+  "first_name",
+  "last_name",
   "rent_paid"
  ],
  "fields": [
@@ -47,20 +48,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "prospective_tenant",
-   "fieldtype": "Link",
-   "label": "Prospective Tenant",
-   "options": "Prospective Tenant",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "prospective_tenant.tenant_name",
-   "fieldname": "tenant_name",
-   "fieldtype": "Read Only",
-   "label": "Tenant Name",
-   "reqd": 1
-  },
-  {
    "fieldname": "rent_paid",
    "fieldtype": "Currency",
    "in_list_view": 1,
@@ -73,9 +60,33 @@
    "fieldtype": "Read Only",
    "label": "Owner",
    "reqd": 1
+  },
+  {
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "label": "Prospective Tenant",
+   "options": "User",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "tenant.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "tenant.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
   }
  ],
- "modified": "2019-11-10 00:14:36.562937",
+ "modified": "2019-11-11 23:25:50.814108",
  "modified_by": "Administrator",
  "module": "Tenant Management",
  "name": "Renting Transaction",

@@ -14,7 +14,7 @@ class RentingTransaction(Document):
 			filters = {
 				"property": self.property,
 				"transaction_date": ("<=", self.transaction_date),
-				#"name": ("!=", self.name)
+				"name": ("!=", self.name)
 			})
 		if self.transaction_type == "New Rent":
 			if transaction and transaction[0].transaction_type == "New Rent":
@@ -24,3 +24,16 @@ class RentingTransaction(Document):
 		else:
 			if not transaction or transaction[0].transaction_type != "New Rent":
 				frappe.throw(_("Cannot renew rent for Property not previously rented"))
+
+#		self.validate_tenant()
+
+	
+	#def validate_tenant(self):
+	#	if not tenant.full_name:
+	#		tenant.full_name = get_full_name(tenant.tenant)
+
+#def get_full_name(tenant):
+#	user = frappe.get_doc("User", tenant)
+
+	# concatenates by space if it has value
+#	return " ".join(filter(None, [user.first_name, user.middle_name, user.last_name]))

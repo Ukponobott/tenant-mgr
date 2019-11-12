@@ -1,0 +1,41 @@
+{
+ "creation": "2019-11-12 11:03:53.683513",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rent_period"
+ ],
+ "fields": [
+  {
+   "default": "365",
+   "description": "In days",
+   "fieldname": "rent_period",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Rent Period",
+   "length": 1
+  }
+ ],
+ "issingle": 1,
+ "modified": "2019-11-12 11:04:01.632476",
+ "modified_by": "Administrator",
+ "module": "Tenant Management",
+ "name": "Tenant Managment Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Estate Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
