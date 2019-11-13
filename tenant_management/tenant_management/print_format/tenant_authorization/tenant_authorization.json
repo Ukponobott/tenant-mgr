@@ -1,0 +1,23 @@
+{
+ "align_labels_right": 1,
+ "creation": "2019-11-13 11:04:45.449073",
+ "custom_format": 0,
+ "default_print_language": "en",
+ "disabled": 0,
+ "doc_type": "Authorised Tenant",
+ "docstatus": 0,
+ "doctype": "Print Format",
+ "font": "Default",
+ "idx": 0,
+ "line_breaks": 1,
+ "modified": "2019-11-13 11:45:30.416721",
+ "modified_by": "Administrator",
+ "module": "Tenant Management",
+ "name": "Tenant Authorization",
+ "owner": "Administrator",
+ "print_format_builder": 0,
+ "print_format_type": "Jinja",
+ "raw_printing": 0,
+ "show_section_headings": 1,
+ "standard": "Yes"
+}

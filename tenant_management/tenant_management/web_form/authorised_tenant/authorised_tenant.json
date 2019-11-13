@@ -1,0 +1,72 @@
+{
+ "accept_payment": 0,
+ "allow_comments": 0,
+ "allow_delete": 0,
+ "allow_edit": 1,
+ "allow_incomplete": 0,
+ "allow_multiple": 0,
+ "allow_print": 1,
+ "amount": 0.0,
+ "amount_based_on_field": 0,
+ "button_label": "Save",
+ "creation": "2019-11-13 11:48:51.297004",
+ "doc_type": "Authorised Tenant",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "idx": 0,
+ "is_standard": 1,
+ "login_required": 1,
+ "max_attachment_size": 0,
+ "modified": "2019-11-13 11:49:54.581403",
+ "modified_by": "Administrator",
+ "module": "Tenant Management",
+ "name": "authorised-tenant",
+ "owner": "Administrator",
+ "payment_button_label": "Buy Now",
+ "print_format": "Tenant Authorization",
+ "published": 1,
+ "route": "authorised-tenant",
+ "route_to_success_link": 0,
+ "show_attachments": 0,
+ "show_in_grid": 0,
+ "show_sidebar": 1,
+ "sidebar_items": [
+  {
+   "enabled": 1,
+   "reference_doctype": "Authorised Tenant",
+   "role": "Estate Manager",
+   "route": "/authorised-tenant",
+   "title": "Authorised Tenant"
+  }
+ ],
+ "success_url": "/authorised-tenant",
+ "title": "Authorised Tenant",
+ "web_form_fields": [
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "transaction_id",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Transaction ID",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Renting Transaction",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 1,
+   "fieldname": "confirm_property",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Property",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Property",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  }
+ ]
+}

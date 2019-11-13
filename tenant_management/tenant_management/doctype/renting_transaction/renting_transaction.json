@@ -48,8 +48,9 @@
    "reqd": 1
   },
   {
+   "fetch_from": "property.rent",
    "fieldname": "rent_paid",
-   "fieldtype": "Currency",
+   "fieldtype": "Read Only",
    "in_list_view": 1,
    "label": "Amount Paid",
    "reqd": 1
@@ -86,7 +87,7 @@
    "reqd": 1
   }
  ],
- "modified": "2019-11-11 23:25:50.814108",
+ "modified": "2019-11-12 13:28:26.516595",
  "modified_by": "Administrator",
  "module": "Tenant Management",
  "name": "Renting Transaction",
