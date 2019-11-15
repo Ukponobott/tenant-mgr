@@ -25,12 +25,7 @@ def get_data():
               "label": _("Owner"),
               "description": _("Owners that own properites."),
             },
-            {
-              "type": "doctype",
-              "name": "Prospective Tenant",
-              "label": _("Prospective Tenant"),
-              "description": _("People who have shown interest in renting a property."),
-            },
+            
             {
               "type": "doctype",
               "name": "Authorised Tenant",
