@@ -17,7 +17,7 @@
  "is_standard": 1,
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2019-11-13 11:02:17.823623",
+ "modified": "2019-11-14 07:31:02.867620",
  "modified_by": "Administrator",
  "module": "Tenant Management",
  "name": "renting-transaction",
@@ -39,8 +39,8 @@
    "title": "Renting Transaction"
   }
  ],
- "success_message": "Successfully Completed, Please Keep your Transaction ID and Proceed to the Authorized  Tenant Module",
- "success_url": "/renting-transaction",
+ "success_message": "",
+ "success_url": "/renting_transaction",
  "title": "Renting Transaction",
  "web_form_fields": [
   {

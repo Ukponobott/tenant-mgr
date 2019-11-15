@@ -18,7 +18,7 @@ class RentingTransaction(Document):
 			})
 		if self.transaction_type == "New Rent":
 			if transaction and transaction[0].transaction_type == "New Rent":
-				frappe.throw(_("Property {0} {1} has not been recorded as returned since {2}".format(
+				frappe.throw(_("Property {0} {1} has not been RENTED out since {2}".format(
 					self.property, self.property_name, transaction[0].transaction_date
 				)))
 		else:

@@ -109,7 +109,7 @@
    "reqd": 1
   }
  ],
- "modified": "2019-11-11 23:30:10.064407",
+ "modified": "2019-11-13 12:47:23.117994",
  "modified_by": "Administrator",
  "module": "Tenant Management",
  "name": "Authorised Tenant",
@@ -129,6 +129,7 @@
   }
  ],
  "quick_entry": 1,
+ "route": "/authorised-tenant",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
