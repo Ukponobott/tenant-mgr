@@ -10,7 +10,7 @@
   "property",
   "property_name",
   "owner",
-  "tenant",
+  "tenant_email",
   "first_name",
   "last_name",
   "rent_paid"
@@ -63,31 +63,28 @@
    "reqd": 1
   },
   {
-   "fieldname": "tenant",
-   "fieldtype": "Link",
-   "label": "Prospective Tenant",
-   "options": "User",
-   "reqd": 1,
-   "search_index": 1
-  },
-  {
-   "fetch_from": "tenant.first_name",
    "fieldname": "first_name",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "First Name",
    "reqd": 1
   },
   {
-   "fetch_from": "tenant.last_name",
    "fieldname": "last_name",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Last Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "tenant_email",
+   "fieldtype": "Data",
+   "label": "Prospective Tenant Email",
+   "reqd": 1,
+   "search_index": 1
   }
  ],
- "modified": "2019-11-22 13:58:58.407055",
+ "modified": "2019-11-25 14:09:12.072672",
  "modified_by": "Administrator",
  "module": "Tenant Management",
  "name": "Renting Transaction",

@@ -7,16 +7,17 @@
   "transaction_id",
   "property_name",
   "confirm_property",
+  "tenant_email",
   "tenant_first_name",
   "tenant_last_name",
   "colum_break_tenancy_agreement",
-  "tenancy_agreement",
-  "section_break_1",
   "from_date",
   "due_date",
   "paid",
+  "section_break_1",
   "property_owner",
-  "property_agent"
+  "property_agent",
+  "tenancy_agreement"
  ],
  "fields": [
   {
@@ -78,7 +79,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "transaction_id.property_name",
+   "fetch_from": "transaction_id.property",
    "fieldname": "property_name",
    "fieldtype": "Read Only",
    "label": "Property Name",
@@ -107,9 +108,16 @@
    "in_list_view": 1,
    "label": "Tenant Last Name",
    "reqd": 1
+  },
+  {
+   "fetch_from": "transaction_id.tenant_email",
+   "fieldname": "tenant_email",
+   "fieldtype": "Read Only",
+   "label": "Tenant Email",
+   "reqd": 1
   }
  ],
- "modified": "2019-11-20 14:06:48.102407",
+ "modified": "2019-11-25 14:43:01.620613",
  "modified_by": "Administrator",
  "module": "Tenant Management",
  "name": "Authorised Tenant",
